@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site</title>
+
+    <style>
+        .header {
+            border-bottom: 2px solid grey;
+        }
+
+        .card {
+            background-color: rgb(222, 220, 220);
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .color {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <header id="header" class="header"> 
+        <h2>Site</h2>
+        <!-- header это тот же div, но для поисковиков так лучше -->
+    </header>
+  
+    <nav id="navigation">  
+        <!-- ID должен быть уникальным для файла  -->
+        <ul>
+            <li> <a href="#"> item 1</a></li>
+            <li> <a href="#"> item 2</a></li>
+            <li> <a href="#"> item 3</a></li>
+        </ul>
+    </nav>
+    <!-- div разделяет логику/ nav --тег спецом для навигации, для поисковиков  -->
+    <hr>
+
+    <aside> 
+    <!-- тег для боковых менюшек, но сам как div -->
+    </aside>
+
+    <section>
+    <article id="blok1" class="card header">
+        <!-- class может быть много. используеться для стилистики. в то время как div используеться для раздления блоков -->
+
+        <h3>blok1</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio reprehenderit sint id quod consectetur. <div class="color">Nisi, ab facilis tenetur placeat beatae exercitationem odio velit praesentium quibusdam.</div>  Fugit aspernatur pariatur dignissimos perspiciatis.</p>
+<!-- раз div блочный, то красный тескт с новой строчки -->
+    </article>
+    <!-- article -- тот же div, но для поисковиов выглядет как статьи -->
+
+
+    <article id="blok2" class="card">
+        <h3>blok2</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio reprehenderit sint id quod consectetur. <span class="color">  Nisi, ab facilis tenetur placeat beatae exercitationem odio velit praesentium quibusdam.</span> Fugit aspernatur pariatur dignissimos perspiciatis.</p>
+        <!--span --строчное выделение или обращение  -->
+    </article>
+</section>
+
+<hr>
+
+    <footer id="footer">
+        <h4>Contact me</h4>
+        <ul>
+            <li>Соцсети 1</li>
+            <li>Соцсети 2</li>
+            <li>Соцсети 3</li>
+        </ul>
+    </footer>
+
+<div class=""></div>
+<!--emmet: div.  -->
+
+<span class=""></span>
+<!--emmet: span.  -->
+
+ <div id=""></div>
+<!--emmet: div#  -->
+
+
+<div class=""></div>
+<!--emmet: "."+tab  -->
+
+<div id="" class=""></div>
+<!--emmet: "#."+tab  -->
+
+
+
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<h1> Формы </h1>
+<!--action="" -- кто обрабатывает данную форму -->
+
+<form><!-- обязатоельно вводить тэг форма, если используешь формы --><!--action="" -- кто обрабатывает данную форму -->
+    
+    <div>
+        <label for="word"> просто текст </label>
+        <input type="text" id="word">
+    </div>
+
+    <div>
+        <label for="word1"> только для чтения </label>
+        <input type="text" id="word1" value="наказ" readonly>
+    </div>
+
+    <div>
+        <label for="text1"> просто текст </label>
+        <input type="text" id="text1" value="отображается по умолчанию">
+    </div>
+
+    <div>
+        <label for="email"> E-mail </label>
+        <input type="email" id="email">
+        <!-- вводимое значение будет требовать значок @ -->
+    </div>
+    <div>
+        <label for="email1"> E-mail </label>
+        <input type="email" id="email1" placeholder="введите Email">
+        <!-- с подсказкой -->
+    </div>
+
+    <div><!--пароль-- вводимое значение будет звездочками -->
+        <label for="password"> Пароль </label>
+        <input type="password" id="password">
+        
+    </div>
+    <div><!-- появляються стрелочки для выбора числа -->
+        <label for="number"> число </label>
+        <input type="number" id="number" min="0">
+    </div>
+    <div><!-- ползунок  -->
+        <label for="range"> range </label>
+        <input type="range" id="range" min="0" max="10" step="4">
+    </div>
+    <div><!-- календарик  -->
+        <label for="date"> выбор даты </label>
+        <input type="date" id="date">
+    </div>
+    <div> <!-- выбор цвета   -->
+        <label for="color"> выбор цвета </label>
+        <input type="color" id="color">
+    </div>
+
+    <div><!-- текст на множество строчек в рамке-->
+    <label for="message"> Ваш отзыв</label>
+    <br>
+    <textarea name="" id="message" cols="30" rows="10"></textarea>
+    <!-- cols и rows задают границы отображения квадрата на странице  -->
+    <br>
+    </div>
+
+<div><!-- рамка, выбор из заранее определенного списка -->
+    <label for="sex"> Ваш пол</label>
+    <select id="sex">
+        <option value="male">мужчина</option>
+        <option value="female" selected > женщина </option>
+        <option value="other">другое</option>
+    <!--selected по умолчанию отображаеться на странице -->
+    </select>
+</div>
+
+<div>
+    <label> выбор правильного  ответоа из списка кружочком</label>  
+    <input type="radio" name="variant">дорога
+    <input type="radio" name="variant">слон
+    <input type="radio" name="variant"> печать
+    <input type="radio" name="variant"> stol
+    <input type="radio" name="variant"> stul
+    <!-- без name --выбираються несколько точек одновременно -->
+</div>
+<div>
+    <label> выбор нескольких правильных ответов галочкой</label>  
+    <input type="checkbox" name="varюю">дорога
+    <input type="checkbox" name="varюю">слон
+    <input type="checkbox" name="varюю"> печать
+    <input type="checkbox" name="varюю"> stol
+    <input type="checkbox" name="varюю"> stul
+</div>
+
+<!--два варианта появление кнопки:  -->
+<!-- 1 -->
+<input type="submit" value="отправить форму"> <br>
+
+<!-- 2 -->
+<button type="submit">Отправить форму</button>
+
+
+</form><!-- обязатоельно вводить тэг форма, если используешь формы -->
+
+
+
+<body>
+    
+</body>
+</html>
